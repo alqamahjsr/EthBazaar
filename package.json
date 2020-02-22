@@ -3,21 +3,39 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "latest",
+    "@material-ui/icons": "latest",
+    "bs58": "latest",
+    "classnames": "latest",
+    "ipfs-http-client": "latest",
+    "prop-types": "latest",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.3.1"
+    "react-scripts": "3.3.1",
+    "react-redux": "latest",
+    "react-router-dom": "latest",
+    "redux": "latest",
+    "redux-responsive": "latest",
+    "truffle-hdwallet-provider": "latest",
+    "web3": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "link-contracts": "run-script-os",
+    "link-contracts:linux:darwin": "cd src && ln -s ../../build/contracts contracts",
+    "link-contracts:win32": "cd src && mklink \\D contracts ..\\..\\build\\contracts"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "devDependencies": {
+    "run-script-os": "^1.0.3"
   },
   "browserslist": {
     "production": [
